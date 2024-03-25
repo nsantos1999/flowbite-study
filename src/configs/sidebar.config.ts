@@ -1,5 +1,5 @@
 import { SidebarItem } from "@/@types/configs.types";
-import { HiChartPie } from "react-icons/hi";
+import { HiChartPie, HiUserAdd } from "react-icons/hi";
 
 export const sidebarItems: SidebarItem[] = [
   {
@@ -8,7 +8,7 @@ export const sidebarItems: SidebarItem[] = [
   },
   {
     title: "Teste2",
-    icon: HiChartPie,
+    icon: HiUserAdd,
     children: [
       {
         title: "Teste1",
