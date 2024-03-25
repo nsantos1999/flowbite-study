@@ -9,13 +9,13 @@ const config: Config = {
     "node_modules/flowbite-react/lib/esm/**/*.js",
   ],
   theme: {
-    // extend: {
-    //   backgroundImage: {
-    //     "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-    //     "gradient-conic":
-    //       "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-    //   },
-    // },
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+    },
     root: {
       base: "h-full",
       collapsed: {
@@ -95,6 +95,7 @@ const config: Config = {
       img: "mr-3 h-6 sm:h-7",
     },
   },
+
   plugins: [require("flowbite/plugin")],
 };
 export default config;

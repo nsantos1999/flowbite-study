@@ -16,11 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <head>
         <ThemeModeScript />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className="bg-white text-gray-600 antialiased dark:bg-gray-900 dark:text-gray-400">
+        {children}
+      </body>
     </html>
   );
 }

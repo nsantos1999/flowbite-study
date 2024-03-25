@@ -2,12 +2,14 @@
 
 import { sidebarItems } from "@/configs/sidebar.config";
 import {
+  NavbarBrand,
   Sidebar,
   SidebarItem,
   SidebarItemGroup,
   SidebarItems,
 } from "flowbite-react";
 import { AdminSidebarItem } from "./AdminSidebarItem";
+import Link from "next/link";
 
 export function AdminSidebar() {
   return (
@@ -15,6 +17,16 @@ export function AdminSidebar() {
       aria-label="Default sidebar example"
       className="h-screen rounded-none"
     >
+      <a href="https://flowbite-react.com" className="flex py-4">
+        <img
+          src="/favicon.ico"
+          className="mr-3 h-6 sm:h-9"
+          alt="Flowbite React Logo"
+        />
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+          Flowbite React
+        </span>
+      </a>
       <SidebarItems className="rounded-none">
         <SidebarItemGroup>
           {sidebarItems.map((sidebarItem, index) => (

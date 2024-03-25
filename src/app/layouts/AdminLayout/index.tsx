@@ -7,11 +7,11 @@ interface AdminLayoutProps {
 
 export function AdminLayout({ children }: AdminLayoutProps) {
   return (
-    <div className="flex flex-col">
-      <Navbar />
-      <div className="flex flex-row">
-        <AdminSidebar />
-        <div className="p-4">{children}</div>
+    <div className="flex flex-row">
+      <AdminSidebar />
+      <div className="flex flex-col w-full py-2 px-4">
+        <Navbar />
+        <div className="py-4">{children}</div>
       </div>
     </div>
   );

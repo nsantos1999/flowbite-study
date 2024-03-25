@@ -1,4 +1,4 @@
-import { Alert, Button, Card } from "flowbite-react";
+import { Alert, Button, Card, Flowbite } from "flowbite-react";
 import Image from "next/image";
 import { AdminLayout } from "./layouts/AdminLayout";
 
