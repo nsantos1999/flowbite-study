@@ -13,10 +13,7 @@ import Link from "next/link";
 
 export function AdminSidebar() {
   return (
-    <Sidebar
-      aria-label="Default sidebar example"
-      className="h-screen rounded-none"
-    >
+    <Sidebar aria-label="Default sidebar example" className="h-screen">
       <a className="flex py-4">
         <img
           src="/favicon.ico"
@@ -27,7 +24,7 @@ export function AdminSidebar() {
           Company Logo
         </span>
       </a>
-      <SidebarItems className="rounded-none">
+      <SidebarItems className="">
         <SidebarItemGroup>
           {sidebarItems.map((sidebarItem, index) => (
             <AdminSidebarItem key={index} item={sidebarItem} />

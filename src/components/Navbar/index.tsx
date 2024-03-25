@@ -16,7 +16,7 @@ import {
 
 export function Navbar() {
   return (
-    <NavbarFB fluid className="border rounded-xl ">
+    <NavbarFB fluid className="rounded-xl border shadow-sm">
       <div className="flex md:order-2 gap-4">
         <DarkThemeToggle />
         <Dropdown

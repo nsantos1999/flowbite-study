@@ -7,7 +7,7 @@ import {
 
 export function Footer() {
   return (
-    <FooterFB container>
+    <FooterFB container className="shadow-md">
       <FooterCopyright
         href="#"
         by="Company Name™"
